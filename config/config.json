@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "",
-    "password": "",
-    "database": "",
-    "host": "",
+    "username": "admin",
+    "password": "admin123",
+    "database": "blog",
+    "host": "blog-db.c6ktkrpagsag.ap-south-1.rds.amazonaws.com",
     "port": 3306,
     "dialect": "mysql"
   }
