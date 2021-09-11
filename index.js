@@ -1,15 +1,12 @@
-const Express = require("express");
+const Express = require('express');
 const app = new Express();
-const db = require("./models");
-const routes = require("./routes");
 
-require("dotenv").config();
-require("./config/dbAuthenticate").authenticateAndSyncDb(db.sequelize);
+require('dotenv').config();
 
-app.use(Express.json());
-app.use("/api", routes)
+app.get('/',(req,res)=>{
+    res.status(200).send("Hello from Nodejs after edit for manual review");
+})
 
-
-app.listen(process.env.PORT, () => {
-    console.log(`Express Server Started on Port ${process.env.PORT}`);
+app.listen(process.env.PORT,()=>{
+    console.log("App started");
 });
