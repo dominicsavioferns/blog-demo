@@ -7,6 +7,6 @@ app.get('/',(req,res)=>{
     res.status(200).send("Hello from EC2 Server!!");
 })
 
-app.listen(process.env.PORT,()=>{
-    console.log("App started");
+app.listen(3000,()=>{
+    console.log("App started on port 3000");
 });
