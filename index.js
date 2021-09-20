@@ -4,7 +4,7 @@ const app = new Express();
 require('dotenv').config();
 
 app.get('/',(req,res)=>{
-    res.status(200).send("Hello from Nodejs after edit for manual review with approval 2");
+    res.status(200).send("Hello from EC2 Server!!");
 })
 
 app.listen(process.env.PORT,()=>{
